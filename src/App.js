@@ -1,26 +1,20 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Input from "./input";
+import Button from "./button"
 
-
-class Hello extends Component {
+class App extends Component {
   render() {
     return (
       <div className="App">
-        Hello
-      </div>
-    );
-  }
-}
-class World extends Component {
-  render() {
-    return (
-      <div>
-        <Hello />
-        World
+        <Input/>
+        <Button className='btn btn-primary' value1="button1" value2="button2" value3="button3"/>
       </div>
     );
   }
 }
 
-export default World;
+
+
+export default App;
